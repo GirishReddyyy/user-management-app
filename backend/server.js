@@ -16,7 +16,11 @@ const app = exp()
 //add cors
 app.set('trust proxy',true);
 app.use(cors({
-    origin:['http://localhost:5173','https://user-management-app-two-mu.vercel.app'],
+    origin:[
+        'http://localhost:5173',
+        'https://user-management-app-two-mu.vercel.app',
+        'https://user-management-app-frontend-phi.vercel.app'
+    ],
     credentials:true
 }))
 //add body parser middleware
