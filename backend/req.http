@@ -1,0 +1,22 @@
+### Create User
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"Ram",
+    "email":"ram@mail.com",
+    "dateOfBirth":"2000-09-12",
+    "mobileNumber":9999999999
+}
+
+### Read all Users
+GET http://localhost:4000/user-api/users
+
+### Read a User by ID
+GET http://localhost:4000/user-api/users/69a68244c14d042b5dd7f4b1
+
+### Delete a uUser by ID
+DELETE   http://localhost:4000/user-api/users/69a68244c14d042b5dd7f4b1
+
+### Activate User
+PATCH http://localhost:4000/user-api/users/69a68244c14d042b5dd7f4b1
